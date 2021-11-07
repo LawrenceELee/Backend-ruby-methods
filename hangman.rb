@@ -41,9 +41,7 @@ def hangman(word, arr_letters_guess)
   # don't use .each_char, a better method would be .each_with_index
   word.each_with_index { |w, idx|
 
-    if arr_letters_guess.include? w then
-      result[idx] = w
-    end
+    result[idx] = w if arr_letters_guess.include? w
 
   }
   return result
