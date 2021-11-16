@@ -86,18 +86,20 @@ def hangman(word, arr_letters_guess)
   
 end
 
-hangman("bob",["b"])
+p hangman("bob",["b"])
 #
 # should return b_b
 
-hangman("alphabet",["a","h"])
+p hangman("alphabet",["a","h"])
 # should return a__ha___
 
-hangman("aaaaaaaaaaabbbbbbbbbbbbbb",["a", "b"])
+p hangman("aaaaaaaaaaabbbbbbbbbbbbbb",["a", "b"])
 # should return aaaa...aaa
 
+p hangman("cdefghij",["a", "b"])
+# should print blanks
 
-hangman("alphabet",["c","d"])
+p hangman("alphabet",["c","d"])
 
 #"a" in ["b", "a", "c"]
 # "in" doesn't do matching. need ot use it like: dummy_var in my_array
